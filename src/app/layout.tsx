@@ -41,9 +41,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  verification: {
-    google: "O84CqIy8enOg7wCgMCBArp73KOtPhNibR9Eo1rq-s14",
-  },
 };
 
 export default function RootLayout({
@@ -53,6 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <meta name="google-site-verification" content="O84CqIy8enOg7wCgMCBArp73KOtPhNibR9Eo1rq-s14" />
+      </head>
       <body className="min-h-screen flex flex-col antialiased">
         <Header />
         <main className="flex-1">{children}</main>
